@@ -1,27 +1,28 @@
 from tkinter import *
 
 window = Tk()
-window.title("GUI Program")
-window.minsize(width=500, height=300)
+window.title("Unit Converter")
+window.config(padx=20, pady=20)
 
+def miles_to_km():
+    miles_to_km_conversion = float(miles_input.get()) * 1.609
+    km_value_label.config(text=f"{miles_to_km_conversion}")
 
-# Label
+miles_input = Entry(width=7)
+miles_input.grid(column=0, row=0)
 
-my_label = Label(text="Unit converter", font=("Arial", 24, "bold"))
-my_label.pack()
+miles_label = Label(text="Miles", font=("Arial", 24, "bold"))
+miles_label.grid(column=1, row=0)
 
-# Button
+km_value_label = Label(text="0", font=("Arial", 24, "bold"))
+km_value_label.grid(column=0, row=1)
 
-def button_listener():
-    my_label.config(text=input.get())
+km_label = Label(text="Km", font=("Arial", 24, "bold"))
+km_label.grid(column=1, row=1)
 
-button = Button(text="Click me", command=button_listener)
-button.pack()
+calculate_button = Button(text="Calculate", command=miles_to_km)
+calculate_button.grid(column=0, row=2)
 
-# Entry
-
-input = Entry(width=10)
-input.pack()
 
 window.mainloop()
 

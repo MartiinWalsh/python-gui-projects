@@ -4,8 +4,8 @@
 
 A unit converter GUI built using Tkinter.
 
-- [The Project Folder]()
+- [The Project Folder](unit-converter)
 
 ## Screenshot
 
-<img alt="Snake Game Screenshot" width="80%" src="./unit-converter/unit_converter_screenshot.png" /><br>
+<img alt="Snake Game Screenshot" width="30%" src="./unit-converter/unit_converter_screenshot.png" /><br>

@@ -17,4 +17,4 @@ A Pomodoro application that runs in the background.
 
 ## Screenshot
 
-<img alt="Pong Game Screenshot" width=35% src="pomodoro_app_screenshot.png" />
+<img alt="Pong Game Screenshot" width=80% src="pomodoro_app_screenshot.png" />
